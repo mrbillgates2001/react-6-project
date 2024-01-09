@@ -1,0 +1,106 @@
+* {
+	background: #161d27;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1240px;
+	width: 100%;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+body {
+	padding-top: 40px;
+	font-family: sans-serif;
+	button {
+		background-color: rgb(13, 15, 30);
+		border: 1px solid transparent;
+		border-radius: 12px;
+		padding: 8px 32px;
+		cursor: pointer;
+	}
+	.search-bar {
+		background-color: rgb(13, 15, 30);
+		border: 1px solid transparent;
+		outline: none;
+		border-radius: 12px;
+		padding: 10px 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 12px auto;
+		width: 100%;
+        height: 70px;
+        color: #fff;
+	}
+	form {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 12px;
+		flex-direction: column;
+		input {
+			background-color: rgb(13, 15, 30);
+			border: 1px solid transparent;
+			outline: none;
+			border-radius: 12px;
+			padding: 16px 42px;
+            height: 60px;
+            color: #fff;
+		}
+        button {
+            width: 345px;
+            height: 60px;
+            color: #fff;
+            &:hover {
+                font-weight: 600;
+                color: orange;
+                background-color: rgb(13, 15, 30);
+                transition: 0.3s;
+            }
+        }
+	}
+	ul {
+		li {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			list-style: upper-latin;
+			color: white;
+			margin: 20px 0;
+
+			table {
+				display: flex;
+				flex-direction: column;
+				row-gap: 6px;
+				.table-heading {
+                    display: flex;
+                    align-items: center;
+                    gap: 100px;
+                    color: yellow;
+                }
+                .table-content {
+                    display: flex;
+                    align-items: center;
+                    gap: 100px;
+                }
+			}
+		}
+	}
+    .buttons {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        button:first-child {
+            color: #fff;
+            background-color: red;
+        }
+        button:last-child {
+            color:#000;
+            background-color: yellow;
+        }
+    }
+}
